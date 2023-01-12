@@ -1,0 +1,5 @@
+
+Scenario: Verify  used is Successfully Logined # Features/Validation_Features.feature:3
+  Given browser is initiated  by the user      # StepDefinitons.Stepdefinitioin.browser_is_initiated_by_the_user()
+  When Valied used Login ID and Password       # StepDefinitons.Stepdefinitioin.valied_used_login_id_and_password()
+  Then Home page should be displayed           # StepDefinitons.Stepdefinitioin.home_page_should_be_displayed()

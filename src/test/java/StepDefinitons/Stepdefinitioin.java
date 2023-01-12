@@ -35,6 +35,9 @@ public class Stepdefinitioin {
 
 		String str =driver.findElement(By.xpath("//img[contains(@alt,'OrangeHRM')]")).getText().toString();
 		System.out.println(str);
+		
+		driver.close();
+		driver.quit();
 	}
 
 }
