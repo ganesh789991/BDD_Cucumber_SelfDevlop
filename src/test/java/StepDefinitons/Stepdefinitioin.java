@@ -39,5 +39,44 @@ public class Stepdefinitioin {
 		driver.close();
 		driver.quit();
 	}
+	@When("i click on {string} buttom")
+	public void i_click_on_buttom(String add) {
+		
+	   driver.findElement(By.xpath("//input[contains(@id,\"btnAdd\")]")).click();
+	   System.out.println("Clicked on"+add);
+	
+	}
+
+	@Then("enter name as  {string}")
+	public void enter_name_as(String name) {
+		
+		 driver.findElement(By.xpath("//input[contains(@class,\"formInputText inputFormatHint ac_input\")]")).sendKeys("SANJEEV KUMAR PRASAD");
+		   driver.findElement(By.xpath("(//input[contains(@class,\"formInputText\")])[2]")).sendKeys(name);
+		   System.out.println("name added ");
+	}
+
+	@Then("enter password as  {string}")
+	public void enter_password_as(String password) {
+		   driver.findElement(By.xpath("(//input[contains(@class,\"formInputText password\")])[1]")).sendKeys(password);
+		   System.out.println("password added");
+	}
+
+	@Then("confirm the password  {string}")
+	public void confirm_the_password(String confirm) {
+		   driver.findElement(By.xpath("(//input[contains(@class,\"formInputText password\")])[2]")).sendKeys(confirm);
+		   System.out.println("confirmed password");
+	}
+
+	@Then("Click {string}")
+	public void click(String string) {
+		
+		 driver.findElement(By.xpath("//input[contains(@class,\"addbutton\")]")).click();
+		 
+		 System.out.println("successfully added the employee");
+	
+		 driver.quit();
+	}
+
+	
 
 }

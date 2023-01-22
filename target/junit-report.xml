@@ -1,9 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="17.989">
-    <testcase classname="Varify Orange Web Application" name="Verify  used is Successfully Logined" time="17.611">
-        <system-out><![CDATA[Given browser is initiated  by the user.....................................passed
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="30.268" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Varify Orange Web Application" name="Adding new employee details - Example #1.1" time="29.783">
+<system-out><![CDATA[
+Given browser is initiated  by the user.....................................passed
 When Valied used Login ID and Password......................................passed
-Then Home page should be displayed..........................................passed
+When i click on "Add" buttom................................................passed
+Then enter name as  "ganesh"................................................passed
+And enter password as  "Kites@7899".........................................passed
+And confirm the password  "Kites@7899"......................................passed
+Then Click "save"...........................................................passed
 ]]></system-out>
-    </testcase>
+</testcase>
 </testsuite>

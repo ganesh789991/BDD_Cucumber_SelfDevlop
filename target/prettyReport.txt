@@ -1,5 +1,9 @@
 
-Scenario: Verify  used is Successfully Logined # Features/Validation_Features.feature:3
-  Given browser is initiated  by the user      # StepDefinitons.Stepdefinitioin.browser_is_initiated_by_the_user()
-  When Valied used Login ID and Password       # StepDefinitons.Stepdefinitioin.valied_used_login_id_and_password()
-  Then Home page should be displayed           # StepDefinitons.Stepdefinitioin.home_page_should_be_displayed()
+Scenario Outline: Adding new employee details # Features/Validation_Features.feature:23
+  Given browser is initiated  by the user     # StepDefinitons.Stepdefinitioin.browser_is_initiated_by_the_user()
+  When Valied used Login ID and Password      # StepDefinitons.Stepdefinitioin.valied_used_login_id_and_password()
+  When i click on "Add" buttom                # StepDefinitons.Stepdefinitioin.i_click_on_buttom(java.lang.String)
+  Then enter name as  "ganesh"                # StepDefinitons.Stepdefinitioin.enter_name_as(java.lang.String)
+  And enter password as  "Kites@7899"         # StepDefinitons.Stepdefinitioin.enter_password_as(java.lang.String)
+  And confirm the password  "Kites@7899"      # StepDefinitons.Stepdefinitioin.confirm_the_password(java.lang.String)
+  Then Click "save"                           # StepDefinitons.Stepdefinitioin.click(java.lang.String)
